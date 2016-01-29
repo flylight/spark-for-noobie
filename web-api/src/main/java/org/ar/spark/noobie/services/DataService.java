@@ -1,12 +1,20 @@
 package org.ar.spark.noobie.services;
 
+import org.ar.ditributed.lib.models.WordResult;
+import org.ar.spark.driver.SparkDriver;
+
+import java.util.List;
+
 /**
- * Created by arymar on 28.01.16.
+ * Service that use our Spark Driver and declare text file path constant.
  */
 public class DataService {
 
-  //TODO create spark driver
+  private static final String TEXT_FILE_PATH = "";
+  private SparkDriver sparkDriver = new SparkDriver();
 
-  //TODO create method that will use spark driver and execute job
+  public List<WordResult> countWords(){
+    return sparkDriver.countWordsFromFile(TEXT_FILE_PATH);
+  }
 
 }
