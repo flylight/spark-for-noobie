@@ -7,8 +7,9 @@ import java.util.Arrays;
 /**
  * Function to map words lines from file to single word list.
  */
-public class MapWordLinesToSingleWordsList implements FlatMapFunction<String, String> {
-  @Override public Iterable<String> call(String s) throws Exception {
+public class SeparateWordLinesFunction implements FlatMapFunction<String, String> {
+  @Override
+  public Iterable<String> call(String s) throws Exception {
     return Arrays.asList(s.split(" "));
   }
 }
