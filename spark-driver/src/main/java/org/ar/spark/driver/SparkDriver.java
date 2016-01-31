@@ -16,12 +16,12 @@ import java.util.List;
  */
 public class SparkDriver {
 
-    private String[] distributedJars = new String[]{"/workspace/projects/spark-for-noobie/distributed-library/target/distributed-library-1.0-SNAPSHOT.jar"};
+    private String[] distributedJars = new String[]{"/workspace/projects/spark-for-newbie/distributed-library/target/distributed-library-1.0-SNAPSHOT.jar"};
 
     private JavaSparkContext sparkContext;
 
     public SparkDriver(){
-        SparkConf sparkConf = new SparkConf().setAppName("SparkForNoobie")
+        SparkConf sparkConf = new SparkConf().setAppName("SparkForNewbie")
             .setJars(distributedJars).setMaster("spark://127.0.0.1:7077");
         this.sparkContext = new JavaSparkContext(sparkConf);
     }

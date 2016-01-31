@@ -8,14 +8,14 @@
   <name>spark-driver</name>
 
   <parent>
-    <groupId>org.ar.spark.noobie</groupId>
-    <artifactId>spark-for-noobie</artifactId>
+    <groupId>org.ar.spark.newbie</groupId>
+    <artifactId>spark-for-newbie</artifactId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
   <dependencies>
     <dependency>
-      <groupId>org.ar.spark.noobie</groupId>
+      <groupId>org.ar.spark.newbie</groupId>
       <artifactId>distributed-library</artifactId>
     </dependency>
 
