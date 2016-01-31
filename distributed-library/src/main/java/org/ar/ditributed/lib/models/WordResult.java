@@ -1,9 +1,11 @@
 package org.ar.ditributed.lib.models;
 
+import java.io.Serializable;
+
 /**
  * Word counting result.
  */
-public class WordResult {
+public class WordResult implements Serializable{
   private String word;
   private int count;
 

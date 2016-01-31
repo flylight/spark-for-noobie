@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class DataService {
 
-  private static final String TEXT_FILE_PATH = "";
+  private static final String TEXT_FILE_PATH = "/workspace/projects/spark-for-noobie/test.txt";
   private SparkDriver sparkDriver = new SparkDriver();
 
   public List<WordResult> countWords(){
